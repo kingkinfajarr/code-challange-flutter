@@ -20,7 +20,7 @@ class LoginAuthController extends StateNotifier<AsyncValue<void>> {
   }
 
   Future<void> login() async {
-    state = AsyncValue.loading();
+    state = const AsyncValue.loading();
 
     final loginAuth = LoginAuth(
       email: _email,

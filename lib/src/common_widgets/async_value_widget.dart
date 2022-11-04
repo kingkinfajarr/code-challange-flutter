@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_transisi/src/common_widgets/lottie_widget.dart';
 import 'package:flutter_transisi/src/exceptions/network_exceptions.dart';
 
 class AsyncValueWidget<T> extends StatelessWidget {
@@ -32,12 +31,6 @@ class AsyncValueWidget<T> extends StatelessWidget {
                 e as NetworkExceptions,
               ),
             );
-            // LottieWidget(
-            //   assets: Resources.lottieError,
-            //   description: NetworkExceptions.getErrorMessage(
-            //     e as NetworkExceptions,
-            //   ),
-            // );
           },
     );
   }

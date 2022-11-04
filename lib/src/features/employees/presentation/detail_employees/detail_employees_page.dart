@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_transisi/src/common_widgets/common_widgets.dart';
 import 'package:flutter_transisi/src/constants/app_sizes.dart';
 import 'package:flutter_transisi/src/constants/app_themes.dart';
-import 'package:flutter_transisi/src/features/employees/domain/employees.dart';
 import 'package:flutter_transisi/src/features/employees/domain/employees_detail.dart';
 import 'package:flutter_transisi/src/features/employees/presentation/detail_employees/controllers/detail_employees_controller.dart';
 
@@ -56,7 +55,7 @@ class _DetailEmployeesPageState extends ConsumerState<DetailEmployeesPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        SizedBox(
           width: double.infinity,
           height: 300,
           child: CachedNetworkImage(
@@ -66,7 +65,7 @@ class _DetailEmployeesPageState extends ConsumerState<DetailEmployeesPage> {
         ),
         Gap.h16,
         Container(
-          padding: EdgeInsets.symmetric(horizontal: Sizes.p16),
+          padding: const EdgeInsets.symmetric(horizontal: Sizes.p16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

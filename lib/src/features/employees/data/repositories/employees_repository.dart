@@ -27,7 +27,6 @@ class EmployeesRepository {
       {required int id}) async {
     try {
       final response = await _dioClient.get("${Endpoints.detailUser}$id");
-      print("response : " + response.toString());
       return ApiResult.success(EmployeesDetailResponse.fromJson(response));
     } catch (e, stacktrace) {
       return ApiResult.failure(

@@ -1,8 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_transisi/src/features/employees/application/employees_mapper.dart';
 import 'package:flutter_transisi/src/features/employees/data/repositories/employees_repository.dart';
-import 'package:flutter_transisi/src/features/employees/data/responses/employees_detail_response.dart';
-import 'package:flutter_transisi/src/features/employees/domain/employees.dart';
 import 'package:flutter_transisi/src/features/employees/domain/employees_detail.dart';
 import 'package:flutter_transisi/src/features/employees/domain/employees_list.dart';
 import 'package:flutter_transisi/src/services/network/api_result.dart';
