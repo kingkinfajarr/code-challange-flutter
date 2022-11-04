@@ -13,6 +13,11 @@
 
 - Check on folder apk to install this application
 
+## Data Login
+
+- email : eve.holt@reqres.in
+- password : cityslicka
+
 ## Tech Stack
 
 - [Riverpod Architecture](https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/)
